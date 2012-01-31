@@ -11,7 +11,7 @@ module Owasp
 
       # Wrapper for Process#spawn
       # it sanitizes the parames and validates paths before execution
-      def execute_command(cmd,params,working_dir,codec,redirect_error)
+      def execute_command(cmd,params,working_dir=nil,codec=nil,log_params=false,redirect_error=false)
         cmd_path = File.expand_path(cmd)
 
       end
